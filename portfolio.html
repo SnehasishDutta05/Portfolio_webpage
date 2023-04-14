@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DUTTA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .test {
+            overflow: auto;
+        }
+        .navigationbar {
+            background-color: white;
+            border: 2px solid black;
+            position: fixed;
+            top: 0%;
+            left: 0%;
+            right: 0%;
+            margin-left: 50px;
+            margin-right: 50px;
+            border-radius: 5px;
+        }
+        .name {
+            display: inline-block;
+            padding: 20px;
+            font-size: 30px;
+            font-family: 'Frank Ruhl Libre', serif;
+            font-weight: bold;
+            /* border: 2px solid black; */
+        }
+        .contacts {
+            display: inline-block;
+            padding: 20px;
+            font-size: 20px;
+            float: right;
+            font-family: 'Frank Ruhl Libre', serif;
+            /* border: 2px solid black; */
+            margin-top: 8px;
+        }
+        .contacts a {
+            text-decoration: none;
+            color: black;
+            /* border: 2px solid black; */
+            margin: 8px;
+        }
+        .box1 {
+            margin-top: 73px;
+            /* border: 2px solid black; */
+            font-family: 'Frank Ruhl Libre', serif;
+            font-size: 50px;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+        .box1 h1 {
+            /* border: 2px solid black; */
+            margin-left: 50px;
+            margin-right: 200px;
+            color: black;
+        }
+        .box1 span {
+            /* border: 2px solid black; */
+            color: #ff7375;
+        }
+
+        .img-1 {
+            /* border: 2px solid black; */
+            display: inline-block;
+            float: left;
+            margin-left: 50px;
+        }
+        .img-1support {
+            /* border: 2px solid black; */
+            float: right;
+            margin-right: 50px;
+            height: 949px;
+            width: 500px;
+            background-color: #fffa92;
+            font-family: 'Frank Ruhl Libre', serif;
+            padding: 100px;
+        }
+        .img-1support h1 {
+            /* border: 2px solid black; */
+            font-size: 50px;
+            margin-bottom: 30px;
+        }
+        .img-1support p {
+            /* border: 2px solid black; */
+            font-size: 20px;
+            margin-bottom: 40px;
+        }
+        .learnmore a {
+            text-decoration: none;
+            color: white;
+            /* border: 2px solid black; */
+            margin: 8px;
+            border-radius: 5px;
+            background-color: #313131;
+            font-family: Lato, sans-serif;
+            text-align: center;
+            padding: 10px;
+        }
+        .part-2 {
+            /* border: 2px solid black; */
+            margin-right: 50px;
+            margin-left: 50px;
+            padding-top: 100px;
+            overflow: auto;
+            width: 1324px;
+        }
+        .img-2 {
+            float: right;
+            display: inline-block;
+            border-top: 1px solid black;
+            border-right: 1px solid black;
+        }
+        .part-2data {
+            float: left;
+            /* border: 2px solid black; */
+            width: 512px;
+            font-family: 'Frank Ruhl Libre', serif;
+            overflow: auto;
+            height: 864px;
+            border-top: 1px solid black;
+            border-left: 1px solid black;
+            border-bottom: 1px solid black;
+        }
+        .part-2data h1 {
+            /* border: 2px solid black; */
+            font-size: 50px;
+            margin-right: 50px;
+            margin-left: 50px;
+            margin-top: 173px;
+        }
+        .part-2data P {
+            /* border: 2px solid black; */
+            font-size: 20px;
+            margin-right: 50px;
+            margin-left: 50px;
+        }
+        .part-2herotext {
+            /* border: 2px solid black; */
+            float: right;
+            width: 812px;
+            padding-left: 50px;
+            padding-right: 50px;
+            padding-top: 35px;
+            padding-bottom: 15px;
+            font-family: 'Frank Ruhl Libre', serif;
+            font-size: 20px;
+            border-right: 1px solid black;
+            border-bottom: 1px solid black;
+        }
+        .part-2 .learnmore a {
+            text-decoration: none;
+            color: white;
+            border: 1px solid black;
+            border-radius: 5px;
+            background-color: #313131;
+            font-family: Lato, sans-serif;
+            text-align: center;
+            padding: 10px;
+            margin: 50px;
+        }
+        .part-2 .learnmore {
+            margin-top: 40px;
+        }
+
+        .part-3 {
+            /* border: 2px solid black; */
+            margin-right: 50px;
+            margin-left: 50px;
+            padding-top: 100px;
+            overflow: auto;
+            width: 1324px;
+        }
+        .img-3 {
+            float: left;
+            display: inline-block;
+            padding-top: 50px;
+            padding-left: 50px;
+            border-top: 1px solid black;
+            border-left: 1px solid black;
+        }
+        .part-3data {
+            float: right;
+            /* border: 2px solid black; */
+            width: 373px;
+            font-family: 'Frank Ruhl Libre', serif;
+            overflow: auto;
+            height: 916px;
+            border-top: 1px solid black;
+            border-right: 1px solid black;
+            border-bottom: 1px solid black;
+        }
+        .part-3data h1 {
+            /* border: 2px solid black; */
+            font-size: 50px;
+            margin-right: 50px;
+            margin-left: 50px;
+            margin-top: 226px;
+        }
+        .part-3data P {
+            /* border: 2px solid black; */
+            font-size: 20px;
+            margin-right: 50px;
+            margin-left: 50px;
+        }
+        .part-3herotext {
+            /* border: 2px solid black; */
+            float: left;
+            width: 951px;
+            padding-left: 108px;
+            padding-right: 50px;
+            padding-top: 35px;
+            padding-bottom: 17px;
+            font-family: 'Frank Ruhl Libre', serif;
+            font-size: 20px;
+            border-left: 1px solid black;
+            border-bottom: 1px solid black;
+        }
+        .part-3 .learnmore a {
+            text-decoration: none;
+            color: white;
+            border: 1px solid black;
+            border-radius: 5px;
+            background-color: #313131;
+            font-family: Lato, sans-serif;
+            text-align: center;
+            padding: 10px;
+            margin: 50px;
+        }
+        .part-3 .learnmore {
+            margin-top: 40px;
+        }
+
+        .part-4 {
+            /* border: 2px solid black; */
+            margin-right: 50px;
+            margin-left: 50px;
+            padding-top: 100px;
+            overflow: auto;
+            width: 1324px;
+        }
+        .img-4 {
+            float: right;
+            display: inline-block;
+            border-top: 1px solid black;
+            border-right: 1px solid black;
+        }
+        .part-4data {
+            float: left;
+            /* border: 2px solid black; */
+            width: 513px;
+            font-family: 'Frank Ruhl Libre', serif;
+            overflow: auto;
+            height: 864px;
+            border-top: 1px solid black;
+            border-left: 1px solid black;
+            border-bottom: 1px solid black;
+        }
+        .part-4data h1 {
+            /* border: 2px solid black; */
+            font-size: 50px;
+            margin-right: 50px;
+            margin-left: 50px;
+            margin-top: 216px;
+        }
+        .part-4data P {
+            /* border: 2px solid black; */
+            font-size: 20px;
+            margin-right: 50px;
+            margin-left: 50px;
+        }
+        .part-4herotext {
+            /* border: 2px solid black; */
+            float: right;
+            width: 811px;
+            padding-left: 50px;
+            padding-right: 50px;
+            padding-top: 25px;
+            padding-bottom: 15px;
+            font-family: 'Frank Ruhl Libre', serif;
+            font-size: 20px;
+            border-right: 1px solid black;
+            border-bottom: 1px solid black;
+        }
+        .part-4 .learnmore a {
+            text-decoration: none;
+            color: white;
+            border: 1px solid black;
+            border-radius: 5px;
+            background-color: #313131;
+            font-family: Lato, sans-serif;
+            text-align: center;
+            padding: 10px;
+            margin: 50px;
+        }
+        .part-4 .learnmore {
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="test">
+        <nav class="navigationbar">
+            <div class="name">
+                SNEHASISH DUTTA
+            </div>
+            <div class="contacts">
+                <a href="#">Work</a>
+                <a href="#">About</a>
+                <a href="#">Contact </a>
+            </div>
+        </nav>
+        <div class="box1">
+            <h1>Coding my way to becoming a
+                <span class="hero-text">Software Engineer</span>
+            </h1>
+        </div>
+        <div class="img-1">
+            <img class="img" src="image-1l.jpeg" alt="" />
+        </div>
+        <div class="img-1support">
+            <h1>Chasing two degrees at once: Engineering and Data Science. </h1>
+            <p>
+                I'm currently pursuing a dual degree in engineering and data science, because I believe that combining
+                these two fields will allow me to tackle complex problems and develop innovative solutions.
+            </p>
+            <div class="learnmore">
+                <a href="#">LEARN MORE</a>
+            </div>
+        </div>
+        <div class="part-2">
+            <div class="img-2">
+                <img src="amity-image-1.jpeg" alt="">
+            </div>
+            <div class="part-2data">
+                <h1>
+                    EDUCATION AND TRAINING:
+                </h1>
+                <p>
+                    Amity University Kolkata/Bachelor of Technology(CSE)
+                    <br>
+                    2020 - Present, Newtown, West-Bengal
+                    <br>
+                    Pursuing B-Tech in Computer science with current CGPA 7.48
+                </p>
+                <p>
+                    IIT(Madras) /Bachelor of Science(Data-Science & Programming) <br>
+                    2020 - Present, Online <br>
+                    Pursuing BSC in DataScience with current CGPA 7.3
+                </p>
+                <div class="learnmore">
+                    <a href="#">LEARN MORE</a>
+                </div>
+            </div>
+            <div class="part-2herotext">
+                <h1>"Everything is designed. Few things are designed well."</h1>
+            </div>
+
+        </div>
+        <div class="part-3">
+            <div class="img-3">
+                <img src="skills.jpg" alt="">
+            </div>
+            <div class="part-3data">
+                <h1>
+                    SKILLS:
+                </h1>
+                <p>
+                    1.C++ <br>
+                    2.C <br>
+                    3.Python <br>
+                    4.Java <br>
+                    5.HTML <br>
+                    6.CSS <br>
+                    7.DSA <br>
+                    8.DBMS <br>
+                    9.SQL
+                </p>
+                <div class="learnmore">
+                    <a href="#">LEARN MORE</a>
+                </div>
+            </div>
+            <div class="part-3herotext">
+                <h1>"The best way to predict the future is to invent it." <br> - Alan Kay</h1>
+            </div>
+        </div>
+        <div class="part-4">
+            <div class="img-4">
+                <img src="painting-image.jpg" alt="">
+            </div>
+            <div class="part-4data">
+                <h1>
+                    HOBBIES:
+                </h1>
+                <p>
+                    I love to express myself through painting.
+                    <br>
+                    I started painting when I was 5 years old and have been doing it ever since.
+                    <br>
+                    I received formal training in painting for a decade at a painting school.
+                    <br>
+                    When it comes to painting, my specialties are still life and oil paintings.
+                    <br>
+                    One of my achievements was receiving the district-level Junior Artist Award, in addition to other accolades.
+                </p>
+                
+                <div class="learnmore">
+                    <a href="#">LEARN MORE</a>
+                </div>
+
+            </div>
+            <div class="part-4herotext">
+                <h1>"Painting is just another way of keeping a diary." - Pablo Picasso</h1>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
